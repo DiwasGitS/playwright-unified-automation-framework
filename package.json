@@ -1,0 +1,24 @@
+{
+  "name": "playwright-unified-automation-framework",
+  "version": "1.0.0",
+  "description": "Hybrid Playwright Automation Framework using POM, API Testing and Azure DevOps Pipelines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiwasGitS/playwright-unified-automation-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DiwasGitS/playwright-unified-automation-framework/issues"
+  },
+  "homepage": "https://github.com/DiwasGitS/playwright-unified-automation-framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0"
+  }
+}
