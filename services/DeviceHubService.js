@@ -1,4 +1,5 @@
 const DeviceHubPage = require('../pages/DeviceHubPage');
+const testData = require('../utils/testData');
 
 class DeviceHubService {
 
@@ -8,10 +9,10 @@ class DeviceHubService {
 
     async createCompleteHierarchy() {
 
-        await this.deviceHubPage.createBuilding('Building01');
-        await this.deviceHubPage.createFloor('Floor01');
-        await this.deviceHubPage.createSite('Site01');
-        await this.deviceHubPage.createSpace('Space01');
+        await this.deviceHubPage.createBuilding(testData.buildings.buildingName);
+        await this.deviceHubPage.createFloor(testData.buildings.floorName);
+        await this.deviceHubPage.createSite(testData.buildings.siteName);
+        await this.deviceHubPage.createSpace(testData.buildings.spaceName);
         await this.deviceHubPage.createUser('User01');
         await this.deviceHubPage.runContainerJob('DeviceSyncJob');
     }

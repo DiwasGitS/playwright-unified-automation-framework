@@ -13,9 +13,9 @@ test('Regression - Add Product To Cart', async ({ page }) => {
     await loginPage.navigateToLoginPage();
 
     await loginPage.login(
-        testData.username,
-        testData.password
-    );
+    testData.users.admin.username,
+    testData.users.admin.password
+);
 
     await dashboardPage.verifyDashboardLoaded();
 
